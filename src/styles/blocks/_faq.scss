@@ -1,0 +1,130 @@
+.faq {
+  padding-top: 220px;
+  padding-bottom: 130px;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+}
+
+.faq-inner {
+  @include container;
+}
+
+.faq-title {
+  @include title-h2;
+
+  @media (max-width: $df-mobile) {
+    padding: 0 10px;
+  }
+}
+
+.faq-list {
+  margin-top: 70px;
+  padding: 0 15px;
+}
+
+.faq-item {
+  margin-top: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 45, 45, 0.2);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.faq-button {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+
+  &.open {
+    .faq-collapse-icon:before {
+      transform: scale(0);
+    }
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.faq-content {
+  display: none;
+  padding: 0 30px 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  p,
+  ul {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+}
+
+.faq-button-title{
+  @media (max-width: $df-mobile) {
+    max-width: 232px;
+  }
+
+}
+
+.faq-collapse-icon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+
+  @media (max-width: $df-mobile) {
+    right: 16px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    margin: auto;
+    background-color: $color-add;
+    transition: all .3s;
+  }
+
+  &:after {
+    transform: rotate(90deg);
+  }
+
+
+}
+
+

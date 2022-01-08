@@ -1,0 +1,118 @@
+.contacts{
+ padding-top: 220px;
+ padding-bottom: 130px;
+
+ @media (max-width: $df-mobile) {
+  padding-top: 90px;
+ padding-bottom: 90px;
+}
+}
+
+.contacts-inner {
+  @include container;
+}
+
+.contacts-title{
+  @include title-h2;
+}
+
+.contacts-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 77px;
+  list-style: none;
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+  }
+
+}
+
+.contacts-list-item{
+  padding: 15px;
+}
+
+.contacts-list-link{
+  margin-right: 50px;
+  color: $color-main;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: color .3s;
+
+  &.active,
+  &:hover {
+    color: $color-add;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}
+
+.contact-info{
+   display: none;
+
+   &.active{
+    display: flex;
+  }
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-info-text{
+  padding-top: 40px;
+  padding-left: 8.33%;
+  width: 41.66%;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 20px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.contact-info-map{
+  width: 58.33%;
+  padding-top: 40px;
+
+  @media (max-width: $df-mobile) {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.small{
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.big{
+  display: block;
+
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}
+
+
+
+

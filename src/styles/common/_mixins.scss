@@ -1,0 +1,19 @@
+@mixin container($width: 1278px) {
+  max-width: $width;
+  margin: 0 auto;
+}
+
+@mixin title-h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+
+  @media (max-width: $df-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+

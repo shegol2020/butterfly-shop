@@ -1,0 +1,132 @@
+.reviews {
+  padding: 240px 0 130px 0;
+
+  @media (max-width: $df-mobile) {
+    padding: 160px 0 90px 0;
+  }
+}
+
+.reviews-inner {
+  @include container;
+}
+
+.review-title {
+  @include title-h2;
+}
+
+.review-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  padding: 0 60px;
+
+  @media (max-width: $df-mobile) {
+    margin-top: 50px;
+  }
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  margin: 0 128px;
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.review-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.review-ava {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.review-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-content {
+  flex-grow: 1;
+  padding-left: 22px;
+
+  @media (max-width: $df-mobile) {
+    padding-left: 0;
+    width: 192px;
+    text-align: center;
+  }
+}
+
+.review-name {
+  padding-bottom: 40px;
+  font-size: 48px;
+  line-height: 65px;
+
+  @media (max-width: $df-mobile) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+}
+
+.review-quote {
+  margin: 40px 0 0 0;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (max-width: $df-mobile) {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (max-width: $df-mobile) {
+    top: 303px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.slick-prev{
+  left: 0;
+  background-image: url("/img/arrow-left.svg");
+
+  @media (max-width: $df-mobile) {
+    left: 10px;
+  }
+}
+
+.slick-next{
+  right: 0;
+  background-image: url("/img/arrow-right.svg");
+
+  @media (max-width: $df-mobile) {
+    right: 10px;
+  }
+}

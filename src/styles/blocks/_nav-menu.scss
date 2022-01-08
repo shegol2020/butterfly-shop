@@ -1,0 +1,63 @@
+.nav-menu{
+  margin-left: auto;
+
+  @media (max-width: $df-mobile) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: $color-main;
+  }
+
+
+  ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+
+    @media (max-width: $df-mobile) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+  a{
+    display: block;
+    padding: 33px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color .8s;
+
+    @media (max-width: $df-mobile) {
+      padding: 13px 0;
+    }
+
+  &.active,
+  &:hover{
+    background-color: red;
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.burger-icon{
+    display: block;
+    margin: 16px;
+    background-image: url(/img/burger.png);
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

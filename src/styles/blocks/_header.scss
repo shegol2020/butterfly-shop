@@ -1,0 +1,29 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100%;
+  background-color: $color-main;
+  color: #fff;
+}
+
+.header a{
+  color: inherit;
+}
+
+.header-inner{
+  @include container;
+}
+
+.header-wrap{
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $df-mobile) {
+    justify-content: space-between;
+  }
+}
+
+
+

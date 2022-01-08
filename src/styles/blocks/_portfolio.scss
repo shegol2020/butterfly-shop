@@ -1,0 +1,126 @@
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
+
+  @media (max-width: $df-mobile) {
+    padding: 0;
+  }
+}
+
+.portfolio-inner{
+  @include container;
+}
+
+.portfolio-title{
+  padding-bottom: 97px;
+  @include title-h2;
+
+  @media (max-width: $df-mobile) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $df-mobile) {
+   flex-direction: column;
+   flex-wrap: nowrap;
+   max-width: 300px;
+   margin: 0 auto;
+  }
+}
+
+.portfolio-item {
+  flex-basis: 25%;
+
+  @media (max-width: $df-mobile) {
+    margin: 10px 0;
+   }
+}
+
+.portfolio-item-wrap {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 10px;
+
+  img{
+    width: 100%;
+    display: block;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin: 0;
+   }
+}
+
+.portfolio-item-text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-new:before{
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  display: inline-block;
+  padding: 5px 60px;
+  color: #fff;
+  transform: rotate(-45deg);
+  content: 'new';
+  background-color: $color-add;
+}
+
+.portfolio-bonus{
+  display: none;
+}
+
+.filter{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  @media (max-width: $df-mobile) {
+    flex-direction: column;
+   }
+}
+
+.filter-item{
+  margin-left: 50px;
+
+  @media (max-width: $df-mobile) {
+    margin-left: 0px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.filter-link{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  &.active{
+    color: $color-add;
+  }
+}
+
+.filter-show{
+  display: none;
+}
